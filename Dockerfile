@@ -8,5 +8,6 @@ RUN easy_install -U pip && \
     pip install flake8==2.2.5
 
 
+WORKDIR /project
 ENTRYPOINT ["flake8"]
 CMD ["src"]
